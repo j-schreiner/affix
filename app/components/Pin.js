@@ -15,7 +15,7 @@ export default class Pin extends React.Component {
         width: 100,
         height: 100,
       }}
-><div className = "plswrk"></div></Rnd>
+      ><div className = "pin-style"></div></Rnd>
   }
 
 }
