@@ -3,21 +3,14 @@
 }
 
 body {
-  background-color: #E9E9E9;
-  margin: 40px;
+  background-color: #FFFFFF;
+  margin: 0 40px;
 }
 
 h1 {
+  color: #2d2d2d;
   font-size: 50px;
   font-family: 'Slabo 13px', serif;
   font-weight: 400;
-}
-
-.pin-style {
-  background-image: url(https://images.unsplash.com/photo-1494794347578-e22cd4049dad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=540de6a0408c13d94d832dbd0e48569a&auto=format&fit=crop&w=2550&q=80);
-  background-size: cover;
-  border: 5px solid white;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
+  margin: 0;
 }
