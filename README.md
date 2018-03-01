@@ -1,16 +1,14 @@
 # AFFIX.
 A Digital Moodboard/Collage Maker.
 
-[Use Affix.](http://)
-
-### Interact-js & React-rnd
-In order to create draggable and resizable 'pin'/image React components, I chose to use [Interact-js](http://interactjs.io/). However, React was clashing with Interact-js — I could only drag a pin/image or resize it, not both — so I then found [React-rnd](https://github.com/bokuweb/react-rnd), an Interact-js 'wrapper' designed for use with React.
-
+[Use Affix. Create a Moodboard.](https://j-schreiner.github.io/affix/)
 
 ### Challenges:
 - Working with React JS — Understanding how React works, the way components are incorporated into the app as a whole, using JSX syntax, React's relationship to DOM elements, etc. Simply the fact that I have only been working with React for little over a week.
 - Creating draggable and resizable image components.
 - Exporting and downloading an image of the artboard area, after a collage had been created. The image/'pin' components are not recognised properly and do not show up on exported png's of the artboard/canvas.
+
+In order to create draggable and resizable 'pin'/image React components, I chose to use [Interact-js](http://interactjs.io/). However, React was clashing with Interact-js — I could only drag a pin/image or resize it, not both — so I then found [React-rnd](https://github.com/bokuweb/react-rnd), an Interact-js 'wrapper' designed for use with React.
 
 ### Future Improvements:
 - To successfully export an image from the 'artboard' and download the image file. Perhaps the use of a screenshot API may be necessary in order for images within the artboard to be rendered in an exported image?
