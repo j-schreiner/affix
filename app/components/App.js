@@ -22,14 +22,12 @@ export default class App extends React.Component {
   }
 
   exportToCanvas() {
-    // var canvas = document.createElement('canvas');
     var canvas = document.getElementById('affix-artboard')
-    var test = document.getElementById('blueBox')
 
     domtoimage.toJpeg(canvas)
     .then(function(dataUrl) {
       var link = document.createElement('a');
-      link.download = 'my-image-name.jpeg';
+      link.download = 'affix.jpeg';
       link.href = dataUrl;
       link.click();
     })
@@ -48,8 +46,10 @@ export default class App extends React.Component {
   render() {
     return <div>
       <Header>
-        <SearchBar addImage={this.addImage} />
-        <button onClick={this.exportToCanvas}>Export</button>
+        <div>
+          <SearchBar addImage={this.addImage} />
+          <button className="export" onClick={this.exportToCanvas}>export</button>
+        </div>
       </Header>
 
       <Artboard>
