@@ -14,8 +14,8 @@ In order to create draggable and resizable 'pin'/image React components, I chose
 
 ### Future Improvements:
 - To successfully export an image from the 'artboard' and download the image file. Perhaps the use of a screenshot API may be necessary in order for images within the artboard to be rendered in an exported image?
-- The functionality of selecting an image from a displayed range, rather than being automatically given the first result to be returned from the Unsplash API data. This is really an essential part of the app, without it, a user does not have control over their moodboard -  and cannot effectively create a cohesive design/concept tailored to their vision.
+- The functionality of selecting an image from a displayed range, rather than being automatically given the first result to be returned from the Unsplash API data. This is really an essential part of the app, without it, a user does not have control over their moodboard — and cannot effectively create a cohesive design/concept tailored to their vision.
 - User accounts — to be able to save, view, edit or delete moodboards/collages made by any particular user.
 
 ### Evaluation
-Affix was designed to challenge. A task that required me to combine the use of React JS, JSX, React-rnd and an API. There was a lot of 'learning on the go' - researching methods and solutions each time I came across something I did not know how to resolve. Whilst the app may not be entirely functional yet, making it has helped parctise existing, and learn new, skills.
+Affix was designed to challenge. A task that required me to combine the use of React JS, JSX, React-rnd and an API. There was a lot of 'learning on the go' — researching methods and solutions each time I came across something I did not know how to resolve. Whilst the app may not be entirely functional yet, making it has helped parctise existing, and learn new, skills.
