@@ -1,5 +1,5 @@
 import React from 'react'
-import  './Artboard.scss'
+import './Artboard.scss'
 
 export default class Artboard extends React.Component {
 
@@ -12,5 +12,5 @@ export default class Artboard extends React.Component {
         {this.props.children}
       </div>
   }
-
+  
 }

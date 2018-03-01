@@ -8,7 +8,6 @@ export default class Pin extends React.Component {
     super(props)
   }
 
-
   render() {
     var divStyle = {
       backgroundImage: 'url(' + this.props.url + ')'
@@ -27,5 +26,5 @@ export default class Pin extends React.Component {
       </div>
       </Rnd>
   }
-
+  
 }

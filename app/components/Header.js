@@ -14,5 +14,5 @@ export default class Pin extends React.Component {
         {this.props.children}
       </header>
   }
-
+  
 }
