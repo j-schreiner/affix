@@ -7,12 +7,8 @@ export default class Artboard extends React.Component {
     super(props)
   }
 
-  componentDidMount() {
-
-  }
-
   render() {
-    return <div className = "artboard">
+    return <div crossOrigin="anonymous" id="affix-artboard" className="artboard">
         {this.props.children}
       </div>
   }

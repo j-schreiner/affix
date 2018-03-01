@@ -9,8 +9,8 @@ export default class Pin extends React.Component {
   }
 
   render() {
-    return <header className = "header">
-        <h1 className = "title">affix.</h1>
+    return <header className="header">
+        <h1 className="title">affix.</h1>
         {this.props.children}
       </header>
   }

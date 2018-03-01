@@ -30,6 +30,7 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
+    "dom-to-image": "^2.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.2.0",
     "react-rnd": "^7.3.0"

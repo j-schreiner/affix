@@ -1,36 +1,59 @@
 import React from 'react'
+import domtoimage from 'dom-to-image'
 import Header from './Header'
 import Pin from './Pin'
 import Artboard from './Artboard'
 import SearchBar from './SearchBar'
 
+
 export default class App extends React.Component {
 
   constructor(props) {
     super(props)
+    this.addImage = this.addImage.bind(this)
     this.state = {
-      unsplash: ['loading...']
+      imageURLs: []
     }
   }
 
-  componentDidMount() {
-    fetch('https://api.unsplash.com/search/photos?query=plants&client_id=0201b88f3048a3ee9d3aabde522330adaecc6304b636c8c75e53d9df3f5fa0ae')
-    .then(res => res.json())
-    .then(res => this.setState({unsplash: res.results[0].urls.raw}))
+  addImage(url) {
+    let urls = this.state.imageURLs
+    this.setState({imageURLs: [...urls, url]})
   }
 
-  // {res.results[0].urls.raw}
+  exportToCanvas() {
+    // var canvas = document.createElement('canvas');
+    var canvas = document.getElementById('affix-artboard')
+    var test = document.getElementById('blueBox')
+
+    domtoimage.toJpeg(canvas)
+    .then(function(dataUrl) {
+      var link = document.createElement('a');
+      link.download = 'my-image-name.jpeg';
+      link.href = dataUrl;
+      link.click();
+    })
+
+
+    // var context = canvas.getContext('2d');
+    //
+    // domvas.toImage(document.getElementById("affix-artboard"), function() {
+    //   context.drawImage(this, 200, 200);
+    // });
+    //
+    // var artBoardImage = canvas.toDataURL('image/png')
+    // console.log(artBoardImage)
+  }
 
   render() {
     return <div>
       <Header>
-      <SearchBar />
+        <SearchBar addImage={this.addImage} />
+        <button onClick={this.exportToCanvas}>Export</button>
       </Header>
 
       <Artboard>
-        <Pin />
-        <Pin />
-        <Pin />
+        {this.state.imageURLs.map((url, ind) => <Pin url={url} key={ind} />)}
       </Artboard>
     </div>
 
