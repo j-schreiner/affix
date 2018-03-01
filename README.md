@@ -1,7 +1,7 @@
 # AFFIX.
 A Digital Moodboard/Collage Maker.
 
-<a target="_blank" href="https://j-schreiner.github.io/affix/">Use Affix. Create a Moodboard.</a>
+<a href="https://j-schreiner.github.io/affix/" target="_blank">Use Affix. Create a Moodboard.</a>
 
 ### Instructions:
 - Search for images by key word(s) in the search bar, press enter to search. An image will appear in the top left corner of the artboard.
