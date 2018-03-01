@@ -1,10 +1,16 @@
 # AFFIX.
 A Digital Moodboard/Collage Maker.
 
-[Use Affix. Create a Moodboard.](https://j-schreiner.github.io/affix/)
+[Use Affix. Create a Moodboard.](https://github.com/j-schreiner/affix)
+
+### Instructions:
+- Search for images by key word(s) in the search bar, press enter to search. An image will appear in the top left corner of the artboard.
+— Drag, and resize this image within the bounds of the artboard. The most recent image will always sit on top of other images when dragged or resized to overlap other images.
+- Continue to add images to the artboard by searching and positioning.
+- Press the export button when you wish to create and download an image of your moodboard/collage.
 
 ### Challenges:
-- Working with React JS — Understanding how React works, the way components are incorporated into the app as a whole, using JSX syntax, React's relationship to DOM elements, etc. Simply the fact that I have only been working with React for little over a week.
+- Working with React JS — Understanding how React works, the way components are incorporated into the app as a whole, using JSX syntax, React's relationship to DOM elements & its 'virtual DOM', etc. Simply the fact that I have only been working with React for little over a week.
 - Creating draggable and resizable image components.
 - Exporting and downloading an image of the artboard area, after a collage had been created. The image/'pin' components are not recognised properly and do not show up on exported png's of the artboard/canvas.
 

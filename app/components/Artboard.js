@@ -8,9 +8,9 @@ export default class Artboard extends React.Component {
   }
 
   render() {
-    return <div crossOrigin="anonymous" id="affix-artboard" className="artboard">
+    return <div id="affix-artboard" className="artboard">
         {this.props.children}
       </div>
   }
-  
+
 }
