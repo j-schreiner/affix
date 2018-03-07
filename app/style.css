@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #F9F9F9;
   margin: 0 40px;
 }
 
@@ -17,10 +17,19 @@ h1 {
 
 .export {
   margin: 0 0 0 10px;
-  color: #2d2d2d;
-  padding: 4px 10px;
+  color: #FFFFFF;
+  background-color: #2d2d2d;
+  padding: 5px 10px;
   border: 1px solid #2d2d2d;
   font-size: 16px;
   font-family: 'Slabo 13px', serif;
   font-weight: 400;
+}
+
+.pin-static {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  background-image: url("https://images.unsplash.com/photo-1477209560495-270790f2251a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=42dc70ee5e560c7e090b959c6c52fbc0&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
 }

@@ -4,6 +4,7 @@ import Header from './Header'
 import Pin from './Pin'
 import Artboard from './Artboard'
 import SearchBar from './SearchBar'
+import Instructions from './Instructions'
 
 export default class App extends React.Component {
 
@@ -35,15 +36,18 @@ export default class App extends React.Component {
   render() {
     return <div>
       <Header>
+
         <div>
           <SearchBar addImage={this.addImage} />
           <button className="export" onClick={this.exportToCanvas}>export</button>
         </div>
+
       </Header>
 
       <Artboard>
         {this.state.imageURLs.map((url, ind) => <Pin url={url} key={ind} />)}
       </Artboard>
+      <Instructions />
     </div>
   }
 }

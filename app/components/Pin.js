@@ -26,5 +26,5 @@ export default class Pin extends React.Component {
       </div>
       </Rnd>
   }
-  
+
 }
